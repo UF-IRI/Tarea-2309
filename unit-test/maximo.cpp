@@ -1,13 +1,10 @@
 #include "gmock/gmock.h"
 
-#include "example.h"
+#include "maximo.h"
 
-using namespace testing;
 
-namespace foobar::tests
-{
+
 	TEST(ExampleTests, Example) {
-		foobar::Example example{};
+		Example example{};
         ASSERT_THAT(example.getValue(), Eq(99));
 	}
-}

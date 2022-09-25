@@ -12,3 +12,14 @@ TEST(PruebaPromedio, Promedio0) {
 	float result = calcularPromedio(elementos, 3);
 	ASSERT_EQ(result, 0);
 }
+
+TEST(PruebaPromedio, PromedioNumeroUnico) {
+	int elementos[] = { 5};
+	float result = calcularPromedio(elementos, 1);
+	ASSERT_EQ(result, 5);
+}
+TEST(PruebaPromedio, PromedioNumGrande) {
+	int elementos[] = { -777569, 5,3,2 };
+	float result = calcularPromedio(elementos, 4);
+	ASSERT_EQ(result, -194389.75);
+}

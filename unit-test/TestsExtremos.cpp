@@ -19,3 +19,11 @@ TEST(PruebaExtremos, Min10negMax1neg) {
 	ASSERT_EQ(result.minimo, -10);
 	ASSERT_EQ(result.maximo, -1);
 }
+
+TEST(PruebaExtremos, Min15negMax50) {
+	int elementos[] = { -15, -5, -3, 20, 0, 50, 36 };
+	Extremos result = encontrarExtremos(elementos, 7);
+	ASSERT_EQ(result.minimo, -15);
+	ASSERT_EQ(result.maximo, 50);
+
+}
